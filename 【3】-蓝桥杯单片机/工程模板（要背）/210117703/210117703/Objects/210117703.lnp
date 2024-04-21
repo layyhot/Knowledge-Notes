@@ -1,0 +1,13 @@
+".\Objects\main.obj",
+".\Objects\timer.obj",
+".\Objects\timer0_555.obj",
+".\Objects\timer0_PWM.obj",
+".\Objects\init_cls_der.obj",
+".\Objects\dsp_led.obj",
+".\Objects\dsp_seg.obj",
+".\Objects\key.obj",
+".\Objects\onewire.obj",
+".\Objects\ds1302.obj",
+".\Objects\iic.obj" 
+TO ".\Objects\210117703" 
+PRINT(".\Listings\210117703.m51") RAMSIZE(256) 

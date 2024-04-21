@@ -1,0 +1,32 @@
+C51 COMPILER V9.59.0.0   DSP_LED                                                           04/15/2024 16:46:50 PAGE 1   
+
+
+C51 COMPILER V9.59.0.0, COMPILATION OF MODULE DSP_LED
+OBJECT MODULE PLACED IN .\Objects\dsp_led.obj
+COMPILER INVOKED BY: E:\Keil5\C51\BIN\C51.EXE ..\Deriver\dsp_led.c OPTIMIZE(8,SPEED) BROWSE INCDIR(..\Deriver;..\Sys;..\
+                    -User) DEBUG OBJECTEXTEND PRINT(.\Listings\dsp_led.lst) OBJECT(.\Objects\dsp_led.obj)
+
+line level    source
+
+   1          #include "dsp_led.h"
+   2          
+   3          void Dsp_Led(unsigned char ucled)
+   4          {
+   5   1              P0 = ~ucled;
+   6   1              P2 = P2 & 0x1f | 0x80;
+   7   1              P2 &= 0x1f;
+   8   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     16    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
